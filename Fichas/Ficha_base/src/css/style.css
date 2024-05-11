@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: #151320;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+}
+
+header{
+    text-align: center;
+}
+
+p{
+    margin: 12px;
+}
+
+ul{
+    margin: 0;
+}
+
+td{
+    padding: 10px 36px 5px 0px;
+}
+
+.borda{
+    border: solid white 1px;
+    border-radius: 3px;
+    margin: 2%;
+    width: 95%;
+}
+
+.box{
+    border: solid 1px rgb(174, 0, 255);
+    padding-left: 25px;
+}
+
+.debuffs{
+    padding: 10px 0px;
+}
