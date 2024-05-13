@@ -2,17 +2,33 @@
     box-sizing: border-box;
 }
 
+@keyframes rgb {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
 body{
     color: white;
     background-color: #151320;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: large;
 }
 
 header{
     text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 p{
@@ -24,15 +40,17 @@ ul{
 }
 
 button{
-    background-color: white;
+    background-color: #151320;
     border: whitesmoke;
     border-radius: 10%;
+    color: white;
 }
 
 input{
     max-width: 50px;
-    border: solid 2px white;
+    border: solid 1px white;
     border-radius: 10%;
+    background-color: #151320;
 }
 
 table{
@@ -44,15 +62,36 @@ td{
 }
 
 .borda{
-    border: solid white 1px;
+    background-color: #151320;
+    position: relative;
     border-radius: 3px;
     margin: 2%;
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda::before, .borda::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: rgb 8s linear infinite;
+}
+
+.borda::after{
+    filter: blur(50px);
 }
 
 .box{
-    border: solid 1px rgb(174, 0, 255);
     padding-left: 25px;
+    margin-left: -600px;
 }
 
 .debuffs{
