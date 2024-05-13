@@ -23,6 +23,22 @@ ul{
     margin: 0;
 }
 
+button{
+    background-color: white;
+    border: whitesmoke;
+    border-radius: 10%;
+}
+
+input{
+    max-width: 50px;
+    border: solid 2px white;
+    border-radius: 10%;
+}
+
+table{
+    margin: 0px 12px;
+}
+
 td{
     padding: 10px 36px 5px 0px;
 }
