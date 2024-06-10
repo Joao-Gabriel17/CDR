@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap');
 
 *{
     box-sizing: border-box;
-    font-family: "Noto Sans JP";
+    font-family: "Cactus Classical Serif";
 }
 
 @keyframes rgb {
@@ -53,9 +53,14 @@ ul{
 
 button{
     background-color: #151320;
-    border: whitesmoke;
+    border: solid 1px whitesmoke;
     border-radius: 10%;
     color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #26223a;
 }
 
 input{
@@ -63,6 +68,7 @@ input{
     border: solid 1px white;
     border-radius: 10%;
     background-color: #151320;
+    color: white;
 }
 
 table{
@@ -71,6 +77,10 @@ table{
 
 td{
     padding: 10px 36px 5px 0px;
+}
+
+sub{
+    margin: 0px 4px;
 }
 
 .borda{
@@ -102,12 +112,11 @@ td{
 }
 
 .box{
-    padding-left: 25px;
-    margin-left: -44%;
+    margin: 0% 2% 2% 2%;
 }
 
-.debuffs{
-    padding: 10px 0px;
+.box h2{
+    text-align: center;
 }
 
 /* Rankings */
@@ -177,6 +186,116 @@ td{
 }
 
 /* Fim dos Rankings */
+
+.pv{
+    color: rgb(255, 14, 14);
+}
+
+.armadura{
+    color: rgba(255,215,0,1);
+}
+
+.mp{
+    color: #1596ff;
+}
+
+.minimalista{
+    border: none;
+    background: none;
+}
+
+.cor{
+    color: rgb(163, 25, 255);
+    accent-color: rgb(163, 25, 255);
+}
+
+.efeitos{
+    padding: 10px 0px;
+}
+
+.efeitos input{
+    position: relative;
+    bottom: -3.5px;
+    margin: 0px 10px;
+    max-width: 40px;
+}
+
+.icon{
+    position: relative;
+    margin: 0px 8px;
+    bottom: -16px;
+}
+
+#exaustao{
+    height: 40px;
+    width: 60px;
+    margin-right: -3px;
+}
+
+#apagao{
+    height: 50px;
+    width: 40px;
+    bottom: -14px;
+}
+
+#cegueira{
+    height: 40px;
+    width: 43px;
+    bottom: -14px;
+}
+
+#sangramento{
+    height: 30px;
+    width: 30px;
+}
+
+#hemorragia{
+    height: 40px;
+    width: 40px;
+    bottom: -20px;
+}
+
+#queimadura{
+    height: 40px;
+    width: 48px;
+}
+
+#envenenado{
+    height: 33px;
+    width: 32px;
+    margin: 0px 14px;
+}
+
+#paralisado{
+    height: 50px;
+    width: 50px;
+    bottom: -25px;
+    margin: -2px;
+}
+
+#congelado{
+    height: 33px;
+    width: 33px;
+}
+
+.enviar{
+    position: relative;
+    bottom: -5px;
+}
+
+.elemento1{
+    border: none;
+    border-top: solid 1px;
+    border-color: #ff6600;
+}
+
+.fogo{
+    color: #ff6600;
+}
+
+.box2 p{
+    margin-bottom: 20px;
+}
 
 .hidden{
     
