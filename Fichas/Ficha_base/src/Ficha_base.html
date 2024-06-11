@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,18 @@
 
 <body>
     <div class="borda">
+
+        <!-- Nome do Personagem -->
+
         <header>
             <h2>Nome do Personagem</h2>
         </header>
+
         <main>
             <div class="box">
+
+                <!-- Informações Pessoais -->
+
                 <fieldset>
                     <legend>
                         <p>Informações Pessoais</p>
@@ -28,7 +35,11 @@
                     <p>Diagnóstico psicológico: </p>
                 </fieldset>
             </div>
+
             <div class="box">
+
+                <!-- Aparência -->
+
                 <fieldset>
                     <legend>
                         <p>Aparência</p>
@@ -50,49 +61,33 @@
                     </ul>
                 </fieldset>
             </div>
+
             <div class="box">
+
+                <!-- Classificação do Personagem -->
+
                 <fieldset>
                     <legend>
                         <p>Classificação</p>
                     </legend>
                     <p>Lvl 1 (0/50)</p>
+                    <p>Classe:</p>
                     <p>Ranking: <span class="bronze">Bronze I ☆★</span></p>
                     <p>Patente:</p>
                 </fieldset>
             </div>
+
             <div class="box">
+
+                <!-- Início das Informações de Combate -->
+
                 <h2>Combate</h2>
+
+                <!-- Saúde e Particularidades do Personagem -->
+
                 <fieldset>
                     <legend>
-                        <p>Perícias Pessoais</p>
-                    </legend>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Medicina: </td>
-                                <td>Terapia: </td>
-                                <td>Psicocinética: </td>
-                            </tr>
-                            <tr>
-                                <td>Cheirar: </td>
-                                <td>Encontrar: </td>
-                                <td>Escutar: </td>
-                                <td>Percepção: </td>
-                            </tr>
-                            <tr>
-                                <td>Carisma: </td>
-                                <td>Intimidar: </td>
-                                <td>Lábia: </td>
-                                <td>Flertar: </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </fieldset>
-            </div>
-            <div class="box">
-                <fieldset>
-                    <legend>
-                        <p>Perícias de Combate</p>
+                        <p>Saúde e Particularidades</p>
                     </legend>
                     <table>
                         <tbody>
@@ -123,6 +118,9 @@
                                     <button class="minimalista" type="submit">-</button>
                                 </td>
                             </tr>
+
+                            <!-- Particularidades do Personagem -->
+
                             <tr>
                                 <td class="força">Força Física: xx <span class="cor">(x)</span></td>
                                 <td class="intelecto">Intelecto: xx <span class="cor">(x)</span></td>
@@ -131,13 +129,21 @@
                             </tr>
                         </tbody>
                     </table>
+                </fieldset>
+
+                <!-- Perícias de Combate -->
+
+                <fieldset>
+                    <legend>
+                        <p>Perícias de Combate</p>
+                    </legend>
                     <table>
                         <tbody>
                             <tr>
                                 <td>Iniciativa: </td>
                             </tr>
                             <tr>
-                                <td>Maestria com Armas: </td>
+                                <td>Armas: </td>
                             </tr>
                         </tbody>
                     </table>
@@ -155,15 +161,50 @@
                             </tr>
                             <tr>
                                 <td>Furtividade: </td>
-                                <td>Deztreza: </td>
+                                <td>Destreza: </td>
                                 <td>Força: </td>
                             </tr>
                         </tbody>
                     </table>
                 </fieldset>
+
+                <!-- Perícias Pessoais -->
+
                 <fieldset>
                     <legend>
-                        <p>Informações de Combate</p>
+                        <p>Perícias Pessoais</p>
+                    </legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Medicina: </td>
+                                <td>Terapia: </td>
+                                <td>Psicocinética: </td>
+                            </tr>
+                            <tr>
+                                <td>Cheirar: </td>
+                                <td>Encontrar: </td>
+                                <td>Escutar: </td>
+                                <td>Percepção: </td>
+                            </tr>
+                            <tr>
+                                <td>Carisma: </td>
+                                <td>Intimidar: </td>
+                                <td>Lábia: </td>
+                                <td>Flertar: </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+
+            <div class="box">
+
+                <!-- Efeitos de Batalha -->
+
+                <fieldset>
+                    <legend>
+                        <p>Efeitos de Batalha</p>
                     </legend>
                     <div class="efeitos">
                         <p>Efeitos Negativos: </p>
@@ -187,50 +228,75 @@
                         <label><img src="/Fichas/Ficha_base/src/img/snowflake.png" alt="congelado" title="congelado"
                                 class="icon" id="congelado"><input type="number" min="-5" max="5"></label>
                         <button type="submit" class="enviar">enviar</button>
-                        <!-- <label><input type="checkbox" class="cor"></label> -->
                         <p>Efeitos Positivos: </p>
                         <ul>
                             <li></li>
                         </ul>
-                        <p class="glossarrio">Glossário: </p>
-                        <ul>
-                            <li></li>
-                        </ul>
-                        <p class="armas">Armas: </p>
-                        <ul>
-                            <li>arma (dano = xdx // <span class="pv">crit</span> = xdx)</li>
-                        </ul>
                     </div>
                 </fieldset>
+
+                <!-- Resumo das Habilidades e Armas do Personagem -->
+
+                <fieldset>
+                    <legend>
+                        <p>Resumo de Habilidades e Armas</p>
+                    </legend>
+                    <p class="glossarrio">Glossário: </p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <p class="armas">Armas: </p>
+                    <ul>
+                        <li>arma (dano = xdx // <span class="pv">crit</span> = xdx)</li>
+                    </ul>
+                </fieldset>
             </div>
+
             <div class="box">
+
+                <!-- Magias -->
+
                 <h2>Magias</h2>
-                    <fieldset class="elemento1">
-                        <legend>
-                            <p class="fogo">Fogo</p>
-                        </legend>
-                        <p>Maestria Elementar: </p>
+
+                <!-- Elemento 1 -->
+
+                <fieldset class="elemento1">
+                    <legend>
+                        <p class="fogo">Fogo</p>
+                    </legend>
+                    <p>Maestria Elementar: </p>
                     <fieldset>
                         <legend>
                             <p>Sopro de Fogo</p>
                         </legend>
                         <span class="box2">
                             <p>Descrição: O usuário assopra uma rajada de fogo na direção do inimigo</p>
-                            <p>Efeito: O alvo deve rolar um constituição, se ele tirar um valor menor que o do seu teste de maestria ele fica com o efeito negativo “queimadura 1° grau”</p>
+                            <p>Efeito: O alvo deve rolar um constituição, se ele tirar um valor menor que o do seu teste
+                                de maestria ele fica com o efeito negativo “queimadura 1° grau”</p>
                             <p>Dano: 1d20 // 1d20 + 1d4 // 1d20 + 1d8</p>
                             <p>Crítico: 1d20 + 1d8 + 1d10 + 1d4</p>
-                            <p>Custo: <span class="mp">6 pontos de mana</span>  \\ Dano<sub>min</sub>: 1d20</p>
+                            <p>Custo: <span class="mp">6 pontos de mana</span> \\ Dano<sub>min</sub>: 1d20</p>
                         </span>
                     </fieldset>
-                        </fieldset>
+                </fieldset>
             </div>
+
             <div class="box">
+
+                <!-- Habilidades -->
+
                 <h2 class="hidden">Habilidades</h2>
+
+                <!-- Passivas-->
+
                 <fieldset>
                     <legend>
                         <p class="hidden" id="Passivas">Passivas</p>
                     </legend>
                 </fieldset>
+
+                <!-- Ativas -->
+
                 <fieldset>
                     <legend>
                         <p class="hidden" id="Ativas">Ativas</p>
@@ -240,4 +306,5 @@
         </main>
     </div>
 </body>
+
 </html>

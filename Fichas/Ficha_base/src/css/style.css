@@ -5,23 +5,7 @@
     font-family: "Cactus Classical Serif";
 }
 
-@keyframes rgb {
-    0%{
-        background-position: 0;
-    }
-    100%{
-        background-position: 300%;
-    }
-}
-
-@keyframes ranking {
-    0%{
-        background-position-x: 0;
-    }
-    100%{
-        background-position-x: 100%;
-    }
-}
+/* Corpo */
 
 body{
     color: white;
@@ -79,9 +63,20 @@ td{
     padding: 10px 36px 5px 0px;
 }
 
-sub{
-    margin: 0px 4px;
+.box{
+    margin: 0% 2% 2% 2%;
 }
+
+.box h2{
+    text-align: center;
+}
+
+.box2 p{
+    margin-bottom: 20px;
+}
+
+
+/* Borda */
 
 .borda{
     background-color: #151320;
@@ -111,15 +106,16 @@ sub{
     filter: blur(25px);
 }
 
-.box{
-    margin: 0% 2% 2% 2%;
+@keyframes rgb {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
 }
 
-.box h2{
-    text-align: center;
-}
-
-/* Rankings */
+/* Ranking */
 
 .bronze{
     background: radial-gradient(circle, rgba(255,172,70,1) 0%, rgba(185,102,0,1) 100%);
@@ -185,7 +181,16 @@ sub{
     color: transparent;
 }
 
-/* Fim dos Rankings */
+@keyframes ranking {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+/* Saúde */
 
 .pv{
     color: rgb(255, 14, 14);
@@ -208,6 +213,8 @@ sub{
     color: rgb(163, 25, 255);
     accent-color: rgb(163, 25, 255);
 }
+
+/* Efeitos */
 
 .efeitos{
     padding: 10px 0px;
@@ -283,6 +290,8 @@ sub{
     bottom: -5px;
 }
 
+/* Magias */
+
 .elemento1{
     border: none;
     border-top: solid 1px;
@@ -291,12 +300,4 @@ sub{
 
 .fogo{
     color: #ff6600;
-}
-
-.box2 p{
-    margin-bottom: 20px;
-}
-
-.hidden{
-    
 }
